@@ -1,22 +1,19 @@
  class CfgPatches
  {
-		class shd_flag
+		class SHD_FLAG_UI
 	{
-		units[] = {};
+		units[] = {"SHD_FlagCarrierEU"};
 		weapons[] = {};
-		requiredVersion = 0.1;
+		requiredVersion = 1.0;
 		requiredAddons[] = {};
 	};
  };
-class DefaultEventhandlers;
-class cfgVehicles
- {
-	 class FlagCarrier;
-	 class shd_flagcarrier: FlagCarrier
-	 {
-		 
-	 
-	 
-	 
-	 };
- };
+class CfgVehicles
+{
+	class FlagCarrier;
+	class SHD_FlagCarrierEU: FlagCarrier
+	{
+		icon = "\textures\i_flag_ca.paa";
+	};
+};
+
